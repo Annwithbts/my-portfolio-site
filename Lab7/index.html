@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .expense-section {
+            margin-top: 20px;
+        }
+        .expense-section input {
+            width: 80px;
+            text-align: center;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Expense Tracker</h1>
+        
+        <div class="expense-section">
+            <label for="nameInput">Enter your name: </label>
+            <input type="text" id="nameInput">
+            <button onclick="submitName()">Submit</button>
+        </div>
+
+        <div class="expense-section">
+            <h2>Breakfast Expense</h2>
+            <input type="number" id="breakfastInput" value="0" step="0.01" oninput="updateExpense('breakfast')">
+            <button onclick="adjustExpense('breakfast', 10)">+10</button>
+            <button onclick="adjustExpense('breakfast', -10)">-10</button>
+        </div>
+
+        <div class="expense-section">
+            <h2>Lunch Expense</h2>
+            <input type="number" id="lunchInput" value="0" step="0.01" oninput="updateExpense('lunch')">
+            <button onclick="adjustExpense('lunch', 10)">+10</button>
+            <button onclick="adjustExpense('lunch', -10)">-10</button>
+        </div>
+
+        <div class="expense-section">
+            <h2>Dinner Expense</h2>
+            <input type="number" id="dinnerInput" value="0" step="0.01" oninput="updateExpense('dinner')">
+            <button onclick="adjustExpense('dinner', 10)">+10</button>
+            <button onclick="adjustExpense('dinner', -10)">-10</button>
+        </div>
+
+        <div class="expense-section">
+            <h2 id="greeting">Total Expense</h2>
+            <p id="totalExpense">0.00</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

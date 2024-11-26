@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="lab6style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to my webpage!</h1>
+            <nav>
+                <ul>
+                    <li><a href="Jubensha.html" title="Project">Project</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="section-content">
+                <h2>Contact Information</h2>
+                <p class="text-body">If you have any questions or suggestions, please feel free to contact me via the following:</p>
+                <ul class="info">
+                    <li>Email: yw652@duke.edu</li>
+                    <li>WeChat: 13433357867</li>
+                </ul>
+            </section>
+
+            <section class="section-content">
+                <h2>Contact Form</h2>
+                <form action="/submit_form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        
+        <footer id="footer-container">
+            <p>&copy; Yaxuan Wang. All rights reserved.</p>
+            <p id="footer-contact">Contact: yw652@duke.edu</p>
+        </footer>
+    </div>
+</body>
+</html>

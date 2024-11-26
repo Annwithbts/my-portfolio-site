@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my webpage!</h1>
+            <nav>
+                <ul style="list-style-type:none;">
+                    <li><a href="Jubensha.html" target="_self" title="Project">Project</a></li>
+                    <li><a href="about.html" target="_self" title="About">About</a></li>
+                    <li><a href="contact.html" target="_self" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Welcome to my Contact page!</h1>
+        <p style="font-size: 24px;">
+        If you have any questions or suggestions, please feel free to contact me via the following email address or my Wechat account:</p>
+        <br>
+        <ul>
+            <li> <big>emial: yw652@duke.edu</big> </li>
+            <li> <big>Wechat: 13433357867<big> </li>
+        </ul> 
+        <br>
+        <h2>Contact Us</h2>
+        
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <footer>
+            <p style="font-size: 18px;">&copy; Yaxuan Wang. <b>All rights reserved.</b></p>
+            <p style="font-size: 18px;">Contact: <i>yw652@duke.edu</i> </p>
+        </footer>
+    </body>
+</html>

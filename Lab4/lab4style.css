@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    background-image: url('webpage background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* 确保浮动内容不会溢出 */
+}
+
+/* Header and Navigation */
+header {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #003366;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+section h2 {
+    clear: both; /* 每个部分开始新的一行 */
+    padding-top: 20px;
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+/* Layout Classes for Floating Elements */
+.float-left {
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+
+.float-right {
+    float: right;
+    width: 48%;
+    margin: 1%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Character Images */
+#character-images {
+    overflow: hidden; /* 确保浮动图片不溢出 */
+    margin-top: 20px;
+}
+
+#character-images img {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Audio and Video */
+audio.float-left,
+video.float-right {
+    width: 48%;
+    margin: 1%;
+}
+
+/* IDs for Specific Elements */
+#main-content {
+    padding: 20px;
+    background-color: #e9f5f9;
+    border-radius: 5px;
+}
+
+#footer-container {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#bilibili-button {
+    background-color: #0099cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bilibili-button:hover {
+    background-color: #007399;
+}
+
+/* Footer */
+footer p {
+    margin: 5px;
+}
+
+/* Classes for main content and sections */
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.section-content {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e6f7ff;
+    border-left: 5px solid #003366;
+    border-radius: 5px;
+}
+
+
+
